@@ -1,0 +1,10 @@
+---
+
+- name: printing Hello world
+  hosts: linux
+  gather_facts: yes
+  become: true
+  become_user: true
+  
+  roles:
+    - hello
