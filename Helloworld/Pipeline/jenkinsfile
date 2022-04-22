@@ -3,7 +3,7 @@ pipeline {
          stages {
             stage ('Hello world') {
                 steps {
-                         sh "docker exec ansible sh -c 'ansible-playbook /ansible_playbook/workspace/Docker_helloworld/Helloworld/Playbooks/helloworld.yml'"
+                         sh "docker exec ansible sh -c 'ansible-playbook /ansible_playbooks/workspace/Docker_helloworld/Helloworld/Playbooks/helloworld.yml'"
                        } 
                      }
                  }
