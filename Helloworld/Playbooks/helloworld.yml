@@ -3,8 +3,8 @@
 - name: printing Hello world
   hosts: localhost
   gather_facts: yes
-  become: true
-  become_user: true
+  #become: true
+  #become_user: true
   
   roles:
     - hello
