@@ -1,7 +1,6 @@
 ---
 
 - name: Printing Hello world
-  tasks:
-    - shell: echo 'Hello World'
-      register: sravani
-    - debug: msg="i am printing {{ sravani.stdout }}"
+  shell: echo 'Hello World'
+  register: sravani
+- debug: msg="i am printing {{ sravani.stdout }}"
