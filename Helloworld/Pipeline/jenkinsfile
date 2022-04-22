@@ -3,7 +3,7 @@ pipeline {
          stages {
             stage ('Hello world') {
                 steps {
-                         sh "docker exec ansible sh -c 'ansible-playbook /ansible_playbooks/workspace/Docker_helloworld/Helloworld/Playbooks/helloworld.yml -i /ansible_playbooks/srav-automation/configuration/inventory --vault-password=/ansible_playbooks/srav-automation/configuration/vault_pass'"
+                         sh "docker exec ansible sh -c 'ansible-playbook /ansible_playbooks/workspace/Docker_helloworld/Helloworld/Playbooks/helloworld.yml'"
                          //sh "docker exec ansible sh -c 'ansible-playbook /ansible_playbooks/workspace/Docker_helloworld/Helloworld/Playbooks/hello/tasks/main.yml'"
                          
                        } 
