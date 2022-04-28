@@ -3,7 +3,7 @@ pipeline{
           stages{
              stage ( 'Restarting Linux service' ){
                   steps {
-                          sh "docker exec ansible sh -c 'ansible-playbook/ansible_playbooks/workspace/practice_job/Restart_Lin/Playbooks/restart.yml'"
+                          sh "docker exec ansible sh -c 'ansible-playbook/ansible_playbooks/workspace/Restart_Lin/Playbooks/restart.yml'"
         
                    }
                  }
