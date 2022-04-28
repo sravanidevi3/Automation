@@ -1,0 +1,6 @@
+---
+
+-name: Restarting Linux services
+ shell: echo 'Restarted Linux service'
+ register: sravani
+ -debug: msg="Restarted {{ sravani.stdout }}" 
