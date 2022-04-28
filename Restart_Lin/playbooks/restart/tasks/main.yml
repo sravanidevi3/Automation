@@ -3,7 +3,7 @@
 - name: Restarting Linux services
   systemd:
      name: "{{ Service_name }}"
-     state: started
+     state: stopped
   register: status
 
 - name: Checking the status of the linux service
