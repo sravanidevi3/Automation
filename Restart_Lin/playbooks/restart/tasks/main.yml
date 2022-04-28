@@ -12,12 +12,12 @@
   register: status_output
   debug:
     msg:
-      - "{{ hostname }} - service {{ Service_name }} is started successfully 
+      - "{{ Host }} - service {{ Service_name }} is started successfully"
   when: status_output == false
   
 - name: Checking the status of the linux service
   debug:
     msg:
-      - "{{ hostname }} - service {{ Service_name }} is not started successfully 
+      - "{{ Host }} - service {{ Service_name }} is not started successfully" 
   when: status_output == true
   
