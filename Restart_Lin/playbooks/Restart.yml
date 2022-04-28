@@ -1,12 +1,12 @@
 ---
 
 - name: Restarting Linux services
-  hosts: linux
+  hosts: localhost
   gather_facts: false
-  become: true
-  remote_user: root
-  become_user: true
-  become_method: sudo
+  #become: true
+  #remote_user: root
+  #become_user: true
+  #become_method: sudo
   vars_files:
       - /ansible_playbooks/sravsautomation/configuration/groupvars/linux
   roles:
