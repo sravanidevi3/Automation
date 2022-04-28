@@ -5,8 +5,6 @@
      name: "{{ Service_name }}"
      state: started
   register: status
-- debug: 
-    msg: "Restarted {{ status.stdout }}" 
 
 - name: Checking the status of the linux service
   shell: systemctl status "{{ Service_name }}"
