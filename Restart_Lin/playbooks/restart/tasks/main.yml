@@ -10,6 +10,8 @@
 - name: Checking the status of the linux service
   shell: systemctl status "{{ Service_name }}"
   register: status_output
+  
+- name: Print status of service
   debug:
     msg:
       - "{{ Host }} - service {{ Service_name }} is started successfully"
