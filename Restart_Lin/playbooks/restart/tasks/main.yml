@@ -4,8 +4,6 @@
   systemd:
      name: "{{ Service_name }}"
      state: stopped
-     enabled: false
-      when: "Service_name in service"
   register: status
 
 - name: Checking the status of the linux service
