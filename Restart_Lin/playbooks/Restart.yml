@@ -1,7 +1,7 @@
 ---
 
 - name: Restarting Linux services
-  hosts: localhost
+  hosts: linux
   gather_facts: false
   #become: true
   #remote_user: root
