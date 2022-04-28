@@ -7,7 +7,7 @@ pipeline{
                       // sh "docker exec ansible sh -c 'echo '$Host' >> /ansible_playbooks/workspace/${job_name}/Restart_Lin/inventory.txt' "
                       // sh "docker exec ansible sh -c 'echo $Service_name > /ansible_playbooks/workspace/${job_name}/Restart_Lin/service_name.txt' "
                       // sh "docker exec ansible sh -c 'ansible-playbook /ansible_playbooks/workspace/${job_name}/Restart_Lin/playbooks/Restart.yml -i /ansible_playbooks/workspace/${job_name}/Restart_Lin/-i inventory.txt --vault-password-file=/ansible_playbooks/sravsautomation/configuration/vault-pass --extra-vars 'Service_name=${Service_name}' '"
-                      sh "docker exec ansible sh -c 'ansible-playbook /ansible_playbooks/workspace/${job_name}/Restart_Lin/playbooks/Restart.yml -i inventory.txt--extra-vars 'Host=${Host}' --extra-vars 'Service_name=${Service_name}' '"
+                      sh "docker exec ansible sh -c 'ansible-playbook /ansible_playbooks/workspace/${job_name}/Restart_Lin/playbooks/Restart.yml -i inventory.txt --extra-vars 'Host=${Host}' --extra-vars 'Service_name=${Service_name}' '"
         
                    }
                  }
