@@ -13,12 +13,16 @@
 - name: Print status of service
   debug:
     msg: failed
+      - "Output for Bala start"
       - "{{ Host }} - service {{ Service_name }} is started successfully"
+      - "Output for Bala start"
   when: status_output == false
   
 - name: Checking the status of the linux service
   debug:
     msg: success
+      - " Output for Bala Start"
       - "{{ Host }} - service {{ Service_name }} is not started successfully" 
+      - " Output for Bala end"
   when: status_output == true
   
