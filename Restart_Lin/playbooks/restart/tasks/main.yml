@@ -4,10 +4,6 @@
   systemd:
      name: "{{ Service_name }}"
      state: stopped
-     gather_facts: false
-  vars:
-    stop_services:
-      - ssh.service
   register: status
 
 - name: Checking the status of the linux service
