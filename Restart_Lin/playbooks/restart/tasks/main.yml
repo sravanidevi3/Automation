@@ -3,11 +3,6 @@
 - name: Restarting Linux services
   systemd:
      name: "{{ Service_name }}"
-     name: grant the ansible user the SeTcbPrivilege right
-    ansible.windows.win_user_right:
-    name: SeTcbPrivilege
-    users: '{{ansible_user}}'
-    action: add
      state: stopped
   register: status
 
