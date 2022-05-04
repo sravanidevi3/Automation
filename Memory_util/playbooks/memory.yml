@@ -1,5 +1,4 @@
 ---
-
 - name: Checking Memory
   hosts: linux
   gather_facts: false
