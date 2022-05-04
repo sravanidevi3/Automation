@@ -3,5 +3,6 @@
   hosts: localhost
   gather_facts: false
   
-- roles: directory
+  roles: 
+    - directory
 
