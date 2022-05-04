@@ -3,7 +3,7 @@ pipeline{
           stages{
              stage ( 'Memory' ){
                   steps {
-                      sh "docker exec ansible-playbook -c" ansible-playbook/ansible_playbook/sravautomation/${Job_name}/ansible_playbook/sravautomation/configuration/inventory.txt
+                      sh "docker exec ansible-playbook -c 'ansible-playbook/ansible_playbook/sravautomation/${Job_name}/ansible_playbook/sravautomation/configuration/inventory.txt'"
                       }
                   }
             }
