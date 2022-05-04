@@ -3,7 +3,7 @@ pipeline{
           stages{
              stage ( 'Memory' ){
                   steps {
-                      sh "docker exec ansible sh -c 'ansible-playbook /ansible_playbooks/workspace/${Job_name}/Memory_util/playbooks/memory.yml -i /ansible_playbooks/sravsautomation/configuration/inventory.txt --vault-password-file=/ansible_playbooks/sravsautomation/configuration/vault-pass --extra-vars Buildnumber=${Build_Number}''"
+                      sh "docker exec ansible sh -c 'ansible-playbook /ansible_playbooks/workspace/${Job_name}/Memory_util/playbooks/memory.yml -i /ansible_playbooks/sravsautomation/configuration/inventory.txt --vault-password-file=/ansible_playbooks/sravsautomation/configuration/vault-pass --extra-vars 'Buildnumber=${Build_Number}''"
                       }
                   }
             }
