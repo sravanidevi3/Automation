@@ -1,6 +1,6 @@
 ---
 - name: Checking Memory
-  hosts: linux
+  hosts: localhost
   gather_facts: false
   become: true
   remote_user: sravani
