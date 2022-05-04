@@ -1,6 +1,0 @@
----
-- name: Create mywizard directory
-  file:
-    path: /etc/ansible_playbooks/workspace/file/mywizard
-    state: directory
-    mode: '0775'
