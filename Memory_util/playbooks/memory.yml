@@ -3,7 +3,7 @@
   hosts: linux
   gather_facts: false
   become: true
- # remote_user: sravani
+  remote_user: sravani
   become_user: true
   become_method: sudo
   vars_files:
