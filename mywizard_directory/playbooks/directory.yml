@@ -2,5 +2,6 @@
 - name: create a directory
   hosts: localhost
   gather_facts: false
-  include_tasks: /tasks/directory.yml
+  
+- roles: directory
 
