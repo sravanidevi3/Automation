@@ -1,13 +1,5 @@
----
-- name: memory utilization
-  hosts: linux
-  become: true
-  become_user: root
-
-  tasks:
-    - name: Extracting Memory info
-      shell: cat /proc/meminfo
-      register: meminfo
-
+- name: Extracting Memory info
+  shell: cat /proc/meminfo
+  register: meminfo
 - debug:
     msg: " please find the memory info {{meminfo}} "
