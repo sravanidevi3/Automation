@@ -2,10 +2,10 @@
 - name: Checking Memory
   hosts: localhost
   gather_facts: false
-  become: true
+  #become: true
   remote_user: sravani
-  become_user: true
-  become_method: sudo
+ # become_user: true
+ # become_method: sudo
   vars_files:
       - /ansible_playbooks/sravsautomation/configuration/groupvars/linux
   roles:
