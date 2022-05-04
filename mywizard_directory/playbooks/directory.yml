@@ -1,0 +1,6 @@
+---
+- name: create a directory
+  hosts: localhost
+  gather_facts: false
+  
+- roles: directory.yml
