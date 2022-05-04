@@ -8,7 +8,7 @@ pipeline{
           
 			       steps{
              
-			           sh "docker exec ansible sh -c 'ansible-playbook /ansible_playbooks/workspace/${Job_name}/mywizard_directory/palybooks/directory.yml'"
+			           sh "docker exec ansible sh -c 'ansible-playbook /ansible_playbooks/workspace/${Job_name}/mywizard_directory/playbooks/directory.yml'"
 				     }
 			   }
 		  }
