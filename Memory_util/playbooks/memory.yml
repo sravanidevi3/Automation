@@ -1,6 +1,6 @@
 ---
 
-- name: Restarting Linux services
+- name: Checking Memory
   hosts: linux
   gather_facts: false
   become: true
@@ -10,4 +10,4 @@
   vars_files:
       - /ansible_playbooks/sravsautomation/configuration/groupvars/linux
   roles:
-    - restart
+    - memory
