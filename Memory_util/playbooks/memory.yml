@@ -6,7 +6,7 @@
   #remote_user: sravani
  # become_user: true
  # become_method: sudo
-  vars_files:
-      - /ansible_playbooks/sravsautomation/configuration/groupvars/linux
+ # vars_files:
+ #     - /ansible_playbooks/sravsautomation/configuration/groupvars/linux
   roles:
     - memory
