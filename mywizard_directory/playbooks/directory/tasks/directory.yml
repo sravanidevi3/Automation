@@ -1,1 +1,18 @@
 
+---
+- name: Create a directory
+  file:
+    path: /tmp/file/
+    state: directory
+    mode: '0775'
+
+
+- name: Create mywizard directory
+  file:
+    path: /tmp/file/mywizard
+    state: directory
+    mode: '0775'
+    
+    
+    
+    
