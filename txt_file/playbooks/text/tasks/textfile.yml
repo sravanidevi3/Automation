@@ -2,15 +2,12 @@
 - name: create pract file
   file:
      path: /tmp/pract.txt
-	 state: file
-	 mode: '0775'
+     state: file
+     mode: '0775'
 
 	  
-	  
-	  
----
 - name: converting txt file to zip file
   archive:
      path: /tmp/pract.txt
-	 dest: /tmp/pract.zip
-	 format: zip
+     dest: /tmp/pract.zip
+     format: zip
