@@ -1,0 +1,16 @@
+pipeline{
+
+    agent any
+	  
+	   stages{  
+	    
+		  stage ('file to zip') {
+		  
+		    steps{
+			    
+				sh "docker exec ansible sh -c 'ansible-playbook /ansible_playbooks/workspace/$(Job_name)/txt_file/playbooks/main.yml'"
+				
+			          }
+				     }
+        }
+	}   
