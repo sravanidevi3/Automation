@@ -2,7 +2,6 @@
 - name: convertion of file
   hosts: localhost
   gather_facts: false
-
-
+  
   roles:
-      - text 
+     - text 
