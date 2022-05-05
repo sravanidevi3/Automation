@@ -2,7 +2,7 @@
 - name: create pract file
   file:
      path: /tmp/pract.txt
-     state: file
+     state: touch
      mode: '0775'
      
 - name: converting txt file to zip file
