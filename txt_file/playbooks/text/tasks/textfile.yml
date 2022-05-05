@@ -4,8 +4,7 @@
      path: /tmp/pract.txt
      state: file
      mode: '0775'
-
-	  
+     
 - name: converting txt file to zip file
   archive:
      path: /tmp/pract.txt
