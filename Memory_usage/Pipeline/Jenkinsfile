@@ -4,7 +4,7 @@ pipeline {
               stage (' Memory_usage ') { 
                   
                   steps {
-                     sh 'ansible-playbook  /var/lib/jenkins/workspace/${JOB_NAME}/Automation/Memory_usage/Playbooks/Memory_usage.yml --extra-vars build_number=${BUILD.number}'
+                     sh 'ansible-playbook  /var/lib/jenkins/workspace/${JOB_NAME}/Automation/Memory_usage/Playbooks/Memory_usage.yml'
                      }
                      
                  }
