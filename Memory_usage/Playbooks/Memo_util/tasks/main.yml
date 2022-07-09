@@ -9,4 +9,4 @@
   shell: free | grep Swap | awk '{print $3/$2 * 100}'
   register: swap_file
 - debug:
-    var: swap_file.stdout_lines
+    var: swap_file.stdout_lines[0]
