@@ -1,0 +1,7 @@
+---
+- hosts: linux
+  become_user: root
+  become: true
+
+  roles: Memo_util
+     
