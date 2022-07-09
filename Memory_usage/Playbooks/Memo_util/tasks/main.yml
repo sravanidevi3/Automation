@@ -1,2 +1,6 @@
 ---
-# tasks file for Memo_util
+- name: Memory
+  shell: ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head -4
+	register: var_output
+- debug:
+	  var: var_output.stdout_lines
